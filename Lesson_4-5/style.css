@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+body{
+    padding: 8px;
+}
+
+.main{
+    border: 1px solid blue;
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgb(57, 57, 148);
+}
+
+.header{
+    background-color: #87CEFA;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+input, label, textarea, select{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input, textarea, select{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hiddenelem{
+    display: none;
+}
+
+.boxes input, .boxes label{
+    width: auto;
+    display: inline;
+}
+
+.button{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn{
+    width: 120px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgb(64, 64, 202);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(64, 64, 202, 0.6);
+    
+}
+
+.box2{
+    border: 2px solid black;
+    width: 30%;
+    margin: 30px auto;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px blueviolet;
+}
+
+.box2 p{
+    font-size: 30px;
+    margin: 20px;
+}
+
+.reference1{
+    color: blue;
+}
+.reference1:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+.reference2{
+    color: red;
+    text-decoration: underline;
+}
+.reference2:hover{
+    color:blue;
+    text-decoration: line-through;
+}
+
+.reference3:hover{
+    color: red;
+    text-decoration: overline;
+}

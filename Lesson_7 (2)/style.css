@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    margin: 10px auto;
+    width: 600px;
+    height: 1000px;
+    border: 2px solid rgb(223, 101, 122);
+    border-radius: 2%;
+    
+
+}
+
+h1, p{
+    color: rgb(223, 101, 122);
+    margin: 16px;
+}
+
+
+
+div a{
+    color: white;
+    margin: 16px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(173, 25, 74);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 60px;
+}

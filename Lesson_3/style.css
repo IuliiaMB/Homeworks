@@ -1,36 +1,111 @@
-h1{
-    font-weight: 900;
-    font-size: 40px;
-    margin-left: 40px;
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "header header"
+        "aside-left aside-right"
+        "footer footer";
+    gap: 10px;
 }
 
-.currency{
-    font-size: 30px;
-    font-weight: 500;
-    margin-left: 60px;
+header {
+    grid-area: header;
+    background-color: rgb(202, 94, 6);
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside-left;
+    background-color: aqua;
+    padding: 20px;
+}
+
+article {
+    grid-area: aside-right;
+    background-color: aqua;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(202, 94, 6);
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        grid-template-columns: 4fr;
+        grid-template-areas: 
+            "header"
+            "aside-left"
+            "aside-right"
+            "footer"
+    }
+}
+
+.wrapper-task {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    color: red;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.box_a {
+    display: grid;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.box_b {
+    display: grid;
+    background-color: black;
+    grid-column-start: 4;
+    grid-column-end: 5;
 
 }
 
-h2{
-    font-size: 35px;
-    font-weight: 900;
-    margin-left: 50px;
-
-}
-table{
-    border: 1px solid gray;
-    margin-left: 50px;
+.box_c {
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
-table th, table td{
-    border: 1px solid black;
-    font-size: 30px;
+.box_d {
+    background-color: black;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
-table img{
-   width: 50px;
+.box_e {
+    background-color: grey;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
-.img_1, .img_2, .img_3, .img_4{
-    margin-right: 5px;
+.box_f {
+    background-color: grey;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box_g {
+    background-color: grey;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }

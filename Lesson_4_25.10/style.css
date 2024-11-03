@@ -1,0 +1,223 @@
+/* https://www.figma.com/design/RbKedig5BcfNRyZ64Tdfow/Lamp?node-id=1-6&node-type=frame&t=NF7k8XOlBbzmqPhs-0     - макет */
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    width: 74px;
+    height: 74px;
+    padding-left: 312px;
+    padding-top: 6px;
+}
+
+.social_links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 33px;
+}
+
+.social_links a img {
+    width: 24px;
+    height: 13.72px;
+    margin-right: 56px;
+}
+
+.block_lampen{
+    background-color:rgba(79, 191, 165, 1);
+    padding-top: 10px;
+    height: 700px;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_links li {
+    list-style-type: none;
+    font-family: "ABeeZee", italic;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;  
+}
+
+.button_nav {
+    width: 194px;
+    height: 42px;
+    border: none;
+    color:rgba(0, 0, 0, 1);
+    font-family: "ABeeZee", italic;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21.28px;
+}
+
+.block_center {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    
+}
+
+.block_left {
+    max-width: 416px;
+    align-items: center;
+    padding-top: 143px;
+    padding-left: 70px;
+}
+
+.block_title {
+    color: white;
+    font-family: "ABeeZee", italic;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.block_text {
+    color: white;
+    font-family: "ABeeZee", italic;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+
+}
+
+.block_button {
+    color: white;
+    background-color: rgba(0, 134, 138, 1);
+    border: none;
+    width: 158px;
+    height: 50px;
+    font-family: "ABeeZee", italic;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21.28px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+
+.block_right {
+    margin-top: 30px;
+    margin-left: 250px;
+    
+}
+
+.block_sentence {
+    max-width: 1296px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 250px;
+    gap: 10px;
+}
+
+.sentence_title {
+    text-align: center;
+    color: rgba(0, 134, 138, 1);
+    font-family: "ABeeZee", italic;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 72px;
+    padding-top: 100px;
+}
+
+.service_one, .service_two, .service_three, .service_four{
+    background-color: rgba(0, 134, 138, 1); 
+
+}
+
+.service_text, .service_text_two, .service_text_three, .service_text_four {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.service_p {
+    font-family: "ABeeZee", italic;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 31.5px;
+    color: white;
+
+}
+
+.bild_frame {
+    width: 50px;
+    height: 40px;
+    align-self: center;
+}
+
+.footer {
+    height: 91px;
+    padding-top: 50px;
+    
+}
+
+.social_links_2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+    margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        max-width: 1000px;
+    }
+    
+    .block_right {
+        margin-top: 30px;
+        margin-left: 50px;    
+    }
+
+    .block_sentence {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+
+
+
+
+
